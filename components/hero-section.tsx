@@ -105,12 +105,12 @@ export function HeroSection() {
                 <br />
                 <AnimatedWord />
               </h1>
-              <Button
+                <Button
                 size="lg"
-                className="bg-white text-primary hover:bg-gray-100 font-medium px-8 rounded-none"
-              >
+                className="bg-white text-primary hover:bg-gray-100 font-medium px-8 rounded-none cursor-pointer"
+                >
                 OUR SERVICES
-              </Button>
+                </Button>
             </div>
           </div>
           {/* Removed the card from the grid */}
