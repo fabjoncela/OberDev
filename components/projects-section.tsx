@@ -245,7 +245,7 @@ export function ProjectsSection() {
                   className="flex-shrink-0 px-3"
                   style={{ width: `${100 / itemsPerView}%` }}
                 >
-                  <div className="group relative overflow-hidden rounded-lg bg-card">
+                  <div className="group relative overflow-hidden bg-card">
                     <div className="aspect-[4/3] bg-gray-200 relative overflow-hidden">
                       <img
                         src={project.image}
