@@ -105,7 +105,7 @@ export function Header() {
             {/* Mobile menu header */}
             <div className="flex h-16 items-center justify-between px-4 border-b">
               {/* here mobile logo from public folder called MobileLogo.png */}
-              <Link href="/" >
+              <Link href="/">
                 <img
                   src="/MainLogo.png"
                   alt="Konstruktion Logo"
@@ -140,14 +140,12 @@ export function Header() {
             {/* Mobile menu navigation */}
             <nav className="flex-1 px-4 py-8">
               <div className="space-y-8">
-                <div className="flex items-center justify-between">
-                  <Link
-                    href="/"
-                    className="text-2xl font-bold text-foreground hover:text-accent transition-colors"
-                    onClick={toggleMobileMenu}
-                  >
-                    HOME
-                  </Link>
+                <Link
+                  href="/"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  onClick={toggleMobileMenu}
+                >
+                  <span>HOME</span>
                   <svg
                     className="h-4 w-4 text-foreground"
                     fill="currentColor"
@@ -155,32 +153,15 @@ export function Header() {
                   >
                     <path d="M7 10l5 5 5-5z" />
                   </svg>
-                </div>
-                <div className="flex items-center justify-between">
-                  <Link
-                    href="/projects"
-                    className="text-2xl font-bold text-foreground hover:text-accent transition-colors"
-                    onClick={toggleMobileMenu}
-                  >
-                    PROJECTS
-                  </Link>
-                  <svg
-                    className="h-4 w-4 text-foreground"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M7 10l5 5 5-5z" />
-                  </svg>
-                </div>
+                </Link>
+                
 
-                <div className="flex items-center justify-between">
-                  <a
-                    href="#about"
-                    className="text-2xl font-bold text-foreground hover:text-accent transition-colors"
-                    onClick={toggleMobileMenu}
-                  >
-                    ABOUT US
-                  </a>
+                <a
+                  href="#about"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  onClick={toggleMobileMenu}
+                >
+                  <span>ABOUT US</span>
                   <svg
                     className="h-4 w-4 text-foreground"
                     fill="currentColor"
@@ -188,16 +169,14 @@ export function Header() {
                   >
                     <path d="M7 10l5 5 5-5z" />
                   </svg>
-                </div>
+                </a>
 
-                <div className="flex items-center justify-between">
-                  <a
-                    href="#services"
-                    className="text-2xl font-bold text-foreground hover:text-accent transition-colors"
-                    onClick={toggleMobileMenu}
-                  >
-                    SERVICES
-                  </a>
+                <a
+                  href="#services"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  onClick={toggleMobileMenu}
+                >
+                  <span>SERVICES</span>
                   <svg
                     className="h-4 w-4 text-foreground"
                     fill="currentColor"
@@ -205,16 +184,14 @@ export function Header() {
                   >
                     <path d="M7 10l5 5 5-5z" />
                   </svg>
-                </div>
+                </a>
 
-                <div className="flex items-center justify-between">
-                  <a
-                    href="#work"
-                    className="text-2xl font-bold text-foreground hover:text-accent transition-colors"
-                    onClick={toggleMobileMenu}
-                  >
-                    WORK
-                  </a>
+                <a
+                  href="#work"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  onClick={toggleMobileMenu}
+                >
+                  <span>WORK</span>
                   <svg
                     className="h-4 w-4 text-foreground"
                     fill="currentColor"
@@ -222,17 +199,29 @@ export function Header() {
                   >
                     <path d="M7 10l5 5 5-5z" />
                   </svg>
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <a
-                    href="#news"
-                    className="text-2xl font-bold text-foreground hover:text-accent transition-colors"
-                    onClick={toggleMobileMenu}
+                </a>
+                <Link
+                  href="/projects"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  onClick={toggleMobileMenu}
+                >
+                  <span>PROJECTS</span>
+                  <svg
+                    className="h-4 w-4 text-foreground"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    NEWS
-                  </a>
-                </div>
+                    <path d="M7 10l5 5 5-5z" />
+                  </svg>
+                </Link>
+
+                <a
+                  href="#news"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  onClick={toggleMobileMenu}
+                >
+                  <span>NEWS</span>
+                </a>
               </div>
             </nav>
           </div>
