@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -14,22 +15,22 @@ export function Header() {
     <>
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <a href="#home" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2">
             <img
               src="/MainLogo2.png"
               alt="Konstruktion Logo"
               className="h-8 w-auto md:h-13 transition-all"
               style={{ maxWidth: "160px" }}
             />
-          </a>
+          </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <a
-              href="#home"
+            <Link
+              href="/"
               className="text-sm font-medium hover:text-accent transition-colors"
             >
               HOME
-            </a>
+            </Link>
             <a
               href="#about"
               className="text-sm font-medium hover:text-accent transition-colors"
@@ -42,12 +43,12 @@ export function Header() {
             >
               SERVICES
             </a>
-            <a
-              href="#work"
+            <Link
+              href="/projects"
               className="text-sm font-medium hover:text-accent transition-colors"
             >
               PROJECTS
-            </a>
+            </Link>
             <a
               href="#news"
               className="text-sm font-medium hover:text-accent transition-colors"
@@ -138,13 +139,29 @@ export function Header() {
             <nav className="flex-1 px-4 py-8">
               <div className="space-y-8">
                 <div className="flex items-center justify-between">
-                  <a
-                    href="#home"
+                  <Link
+                    href="/"
                     className="text-2xl font-bold text-foreground hover:text-accent transition-colors"
                     onClick={toggleMobileMenu}
                   >
                     HOME
-                  </a>
+                  </Link>
+                  <svg
+                    className="h-4 w-4 text-foreground"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M7 10l5 5 5-5z" />
+                  </svg>
+                </div>
+                <div className="flex items-center justify-between">
+                  <Link
+                    href="/projects"
+                    className="text-2xl font-bold text-foreground hover:text-accent transition-colors"
+                    onClick={toggleMobileMenu}
+                  >
+                    PROJECTS
+                  </Link>
                   <svg
                     className="h-4 w-4 text-foreground"
                     fill="currentColor"

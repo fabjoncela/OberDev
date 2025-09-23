@@ -1,6 +1,9 @@
 "use client";
 
-import type React from "react";
+
+
+import { projects } from "@/lib/projects";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { useState, useRef, useEffect } from "react";
@@ -13,33 +16,7 @@ export function ProjectsSection() {
   const startX = useRef(0);
   const isDragging = useRef(false);
 
-  const projects = [
-    {
-      title: "OBERON RESIDENCE",
-      category: "Projects",
-      image: "/oberon.jpg",
-    },
-    {
-      title: "THE ONE BY OBER",
-      category: "Projects",
-      image: "/theone.jpg",
-    },
-    {
-      title: "FLOWER TOWER",
-      category: "Projects",
-      image: "/flower.png",
-    },
-    {
-      title: "Urban Plaza",
-      category: "Projects",
-      image: "/oberon.jpg",
-    },
-    {
-      title: "Tech Campus",
-      category: "Projects",
-      image: "/oberon.jpg",
-    },
-  ];
+  // projects imported from lib/projects
 
   const getItemsPerView = () => {
     if (typeof window === "undefined") return 1;
@@ -245,7 +222,7 @@ export function ProjectsSection() {
                   className="flex-shrink-0 px-3"
                   style={{ width: `${100 / itemsPerView}%` }}
                 >
-                  <div className="group relative overflow-hidden bg-card">
+                  <Link href={`/projects/${project.slug}`} className="group relative overflow-hidden bg-card block focus:outline-none">
                     <div className="aspect-[4/3] bg-gray-200 relative overflow-hidden">
                       <img
                         src={project.image}
@@ -258,14 +235,8 @@ export function ProjectsSection() {
                         {/* the plus + div in the corner of the img */}
                         <div className="relative">
                           <div
-                            role="button"
-                            tabIndex={0}
-                            className="w-13 h-13 p-0 m-0 absolute bottom-0 right-0 bg-white flex items-center justify-center cursor-pointer select-none group"
+                            className="w-13 h-13 p-0 m-0 absolute bottom-0 right-0 bg-white flex items-center justify-center select-none group"
                             style={{ borderRadius: 0 }}
-                            onKeyDown={(e) => {
-                              if (e.key === "Enter" || e.key === " ")
-                                e.currentTarget.click();
-                            }}
                           >
                             {/* Animated tooltip */}
                             <div
@@ -297,7 +268,7 @@ export function ProjectsSection() {
                       </p>
                       <h3 className="font-semibold text-lg">{project.title}</h3>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </div>
