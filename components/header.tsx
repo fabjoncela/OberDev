@@ -5,6 +5,34 @@ import { useState } from "react";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [lang, setLang] = useState("en");
+
+  const navContent = {
+    en: {
+      home: "HOME",
+      about: "ABOUT US",
+      services: "SERVICES",
+      projects: "PROJECTS",
+      news: "NEWS",
+      work: "WORK",
+    },
+    alb: {
+      home: "BALLINA",
+      about: "RRETH NESH",
+      services: "SHERBIME",
+      projects: "PROJEKTE",
+      news: "LAJME",
+      work: "PUNE",
+    },
+    it: {
+      home: "HOME",
+      about: "CHI SIAMO",
+      services: "SERVIZI",
+      projects: "PROGETTI",
+      news: "NOTIZIE",
+      work: "LAVORI",
+    },
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -28,35 +56,64 @@ export function Header() {
               href="#home"
               className="text-sm font-medium hover:text-accent transition-colors"
             >
-              HOME
+              {navContent[lang].home}
             </a>
             <a
               href="#about"
               className="text-sm font-medium hover:text-accent transition-colors"
             >
-              ABOUT US
+              {navContent[lang].about}
             </a>
             <a
               href="#services"
               className="text-sm font-medium hover:text-accent transition-colors"
             >
-              SERVICES
+              {navContent[lang].services}
             </a>
             <a
               href="#work"
               className="text-sm font-medium hover:text-accent transition-colors"
             >
-              PROJECTS
+              {navContent[lang].projects}
             </a>
             <a
               href="#news"
               className="text-sm font-medium hover:text-accent transition-colors"
             >
-              NEWS
+              {navContent[lang].news}
             </a>
           </nav>
 
           <div className="flex items-center space-x-4">
+            {/* Language dropdown */}
+            {/* <div className="hidden md:flex items-center relative">
+              <select
+                className="appearance-none bg-transparent border rounded px-2 py-1 text-sm text-black focus:outline-none focus:ring-2 focus:ring-accent cursor-pointer"
+                style={{ minWidth: 90 }}
+                value={lang}
+                onChange={e => setLang(e.target.value)}
+                aria-label="Select language"
+              >
+                <option value="en">English</option>
+                <option value="alb">Shqip</option>
+                <option value="it">Italiano</option>
+              </select>
+              <svg
+                className="w-4 h-4 absolute right-2 pointer-events-none text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div> */}
+
+            {/* icon of search lupa e kerkimit */}
             {/* <Button variant="ghost" size="sm" className="hidden md:flex">
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
