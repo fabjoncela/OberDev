@@ -67,12 +67,12 @@ export function Header() {
                 />
               </svg>
             </Button> */}
-            <Button
-              size="sm"
-              className="hidden md:flex bg-accent-foreground hover:bg-accent-foreground/90 text-accent"
+            <div
+              className="hidden md:flex bg-transparent  text-black btext-sm font-medium px-0 cursor-pointer select-none "
+              style={{ borderRadius: 0 }}
             >
               GET IN TOUCH
-            </Button>
+            </div>
 
             <Button
               variant="ghost"
