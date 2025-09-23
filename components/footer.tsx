@@ -1,3 +1,4 @@
+import Link from "next/link";
 export function Footer() {
   return (
     <footer className="bg-card py-16">
@@ -52,12 +53,13 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#projects"
+                {/* Use Next.js Link for projects */}
+                <Link
+                  href="/projects"
                   className="hover:text-accent transition-colors"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
                 <a
