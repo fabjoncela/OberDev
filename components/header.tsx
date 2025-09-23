@@ -105,12 +105,14 @@ export function Header() {
             {/* Mobile menu header */}
             <div className="flex h-16 items-center justify-between px-4 border-b">
               {/* here mobile logo from public folder called MobileLogo.png */}
-              <img
-                src="/MainLogo.png"
-                alt="Konstruktion Logo"
-                className="h-11 w-auto"
-                style={{ maxWidth: "160px" }}
-              />
+              <Link href="/" >
+                <img
+                  src="/MainLogo.png"
+                  alt="Konstruktion Logo"
+                  className="h-11 w-auto cursor-pointer"
+                  style={{ maxWidth: "160px" }}
+                />
+              </Link>
 
               {/* Close button with orange X */}
               <Button
