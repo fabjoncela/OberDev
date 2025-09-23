@@ -108,7 +108,7 @@ export function ProjectsSection() {
       <div className="container px-4 md:px-6">
         <div className="mb-12">
           <div className="flex items-center mb-4">
-            {/* <span className="text-sm font-medium text-muted">Projects</span> */}
+            <span className="text-sm font-medium text-red-700">Projects</span>
             <div className="w-12 h-0.5 bg-accent ml-4"></div>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold leading-tight max-w-4xl">
@@ -254,30 +254,45 @@ export function ProjectsSection() {
                         loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <Button
-                          size="sm"
-                          variant="secondary"
-                          className="rounded-full w-8 h-8 p-0"
-                        >
-                          <svg
-                            className="h-4 w-4"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
+                      <div className="absolute bottom-0 right-0 transition-opacity duration-300 opacity-100 p-0 m-0">
+                        {/* the plus + div in the corner of the img */}
+                        <div className="relative">
+                          <div
+                            role="button"
+                            tabIndex={0}
+                            className="w-13 h-13 p-0 m-0 absolute bottom-0 right-0 bg-white flex items-center justify-center cursor-pointer select-none group"
+                            style={{ borderRadius: 0 }}
+                            onKeyDown={(e) => {
+                              if (e.key === "Enter" || e.key === " ")
+                                e.currentTarget.click();
+                            }}
                           >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 4v16m8-8H4"
-                            />
-                          </svg>
-                        </Button>
+                            {/* Animated tooltip */}
+                            <div
+                              className="absolute right-full bottom-0 mb-0 mr-0 translate-x-12 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-700 ease-in-out bg-white text-black flex items-center justify-center shadow-lg pointer-events-none select-none font-normal text-xs  whitespace-nowrap px-3 h-13"
+                              style={{ borderRadius: 0 }}
+                            >
+                              View Project
+                            </div>
+                            <svg
+                              className="h-6 w-6"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M12 4v16m8-8H4"
+                              />
+                            </svg>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div className="p-4">
-                      <p className="text-xs text-muted mb-1">
+                      <p className="text-xs text-gray-500 mb-1">
                         {project.category}
                       </p>
                       <h3 className="font-semibold text-lg">{project.title}</h3>
