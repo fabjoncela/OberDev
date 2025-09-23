@@ -1,7 +1,5 @@
 "use client";
 
-
-
 import { projects } from "@/lib/projects";
 import Link from "next/link";
 
@@ -222,12 +220,17 @@ export function ProjectsSection() {
                   className="flex-shrink-0 px-3"
                   style={{ width: `${100 / itemsPerView}%` }}
                 >
-                  <Link href={`/projects/${project.slug}`} className="group relative overflow-hidden bg-card block focus:outline-none">
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="group relative overflow-hidden bg-card block focus:outline-none"
+                  >
                     <div className="aspect-[4/3] bg-gray-200 relative overflow-hidden">
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        className={`absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105${
+                          project.slug === "oberon-tower" ? " blur-xs" : ""
+                        }`}
                         loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

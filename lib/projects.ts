@@ -29,10 +29,10 @@ export const projects: Project[] = [
     category: "Projects",
   },
   {
-    slug: "urban-plaza",
-    title: "Urban Plaza",
+    slug: "oberon-tower",
+    title: "OBERON TOWER",
     description: "A vibrant mixed-use development.",
-    image: "/oberon.jpg",
+    image: "/testLogo.png",
     category: "Projects",
   },
   
