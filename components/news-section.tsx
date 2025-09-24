@@ -203,7 +203,7 @@ export function NewsSection() {
               <button
                 onClick={goToPrev}
                 disabled={currentIndex === 0}
-                className={`absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hidden md:flex ${
+                className={`absolute left-4 top-[40%] -translate-y-1/2 z-10 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hidden md:flex ${
                   isHovered && currentIndex > 0 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -222,10 +222,11 @@ export function NewsSection() {
                 </svg>
               </button>
 
+              {/* right arrow */}
               <button
                 onClick={goToNext}
                 disabled={currentIndex >= maxIndex}
-                className={`absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hidden md:flex ${
+                className={`absolute right-4 top-[40%] -translate-y-1/2 z-10 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hidden md:flex ${
                   isHovered && currentIndex < maxIndex
                     ? "opacity-100"
                     : "opacity-0"

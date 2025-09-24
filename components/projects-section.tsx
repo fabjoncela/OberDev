@@ -82,19 +82,22 @@ export function ProjectsSection() {
   // Removed duplicate declarations
 
   return (
-    <section id="work" className="py-16 md:py-24 bg-background">
-      <div className="container px-4 md:px-6">
+    <section
+      id="work"
+      className="py-16 md:py-24 bg-background flex justify-center"
+    >
+      <div className="container px-4 md:px-6 mx-auto">
         <div className="mb-12">
           <div className="flex items-center mb-4">
-            <span className="text-sm font-medium text-red-700">
+            <span className="text-sm font-medium text-black-700">
               {t.subtitle}
             </span>
             <div className="w-12 h-0.5 bg-accent ml-4"></div>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight max-w-4xl">
+          <h2 className="text-3xl md:text-5xl  leading-tight max-w-4xl">
             {t.title}
           </h2>
-          {/* <Button variant="link" className="mt-4 p-0 text-accent hover:text-accent/80">
+          {/* <Button variant="link" className="mt-4 p-0 text-black-700 hover:text-accent/80">
             View all projects →
           </Button> */}
         </div>
@@ -104,8 +107,9 @@ export function ProjectsSection() {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
+          {/* left arrow */}
           <div
-            className={`hidden lg:block absolute left-4 top-1/2 -translate-y-1/2 z-10 transition-opacity duration-300 ${
+            className={`hidden lg:block absolute left-4 top-[40%] -translate-y-1/2 z-10 transition-opacity duration-300 ${
               isHovered ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -132,8 +136,9 @@ export function ProjectsSection() {
             </Button>
           </div>
 
+          {/* right arrow */}
           <div
-            className={`hidden lg:block absolute right-4 top-1/2 -translate-y-1/2 z-10 transition-opacity duration-300 ${
+            className={`hidden lg:block absolute right-4 top-[40%] -translate-y-1/2 z-10 transition-opacity duration-300 ${
               isHovered ? "opacity-100" : "opacity-0"
             }`}
           >

@@ -1,12 +1,14 @@
-import { Header } from "@/components/header"
-import { HeroSection } from "@/components/hero-section"
-import { ProjectsSection } from "@/components/projects-section"
-import { SectorsSection } from "@/components/sectors-section"
-import { ServicesSection } from "@/components/services-section"
-import { StatsSection } from "@/components/stats-section"
-import { NewsSection } from "@/components/news-section"
-import { CTASection } from "@/components/cta-section"
-import { Footer } from "@/components/footer"
+import { Header } from "@/components/header";
+import { HeroSection } from "@/components/hero-section";
+
+import { ProjectsSection } from "@/components/projects-section";
+import { SectorsSection } from "@/components/sectors-section";
+import { ServicesSection } from "@/components/services-section";
+import { StatsSection } from "@/components/stats-section";
+import { NewsSection } from "@/components/news-section";
+import { CTASection } from "@/components/cta-section";
+import { Footer } from "@/components/footer";
+import { WhoWeAreSection } from "@/components/who-we-are-section";
 
 export default function HomePage() {
   return (
@@ -14,6 +16,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <WhoWeAreSection />
         <ProjectsSection />
         <SectorsSection />
         <ServicesSection />
@@ -23,5 +26,5 @@ export default function HomePage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
