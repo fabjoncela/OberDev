@@ -19,7 +19,10 @@ export function Header() {
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const lang = e.target.value as any;
     setLanguage(lang);
-    router.push(`/${lang}/`);
+    // Replace the language segment in the current path
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.replace(/^\/(en|al|it)/, `/${lang}`);
+    router.push(newPath);
   };
   const handleMobileLanguageChange = (
     e: React.ChangeEvent<HTMLSelectElement>
@@ -27,7 +30,9 @@ export function Header() {
     const lang = e.target.value as any;
     setLanguage(lang);
     setIsMobileMenuOpen(false);
-    router.push(`/${lang}/`);
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.replace(/^\/(en|al|it)/, `/${lang}`);
+    router.push(newPath);
   };
 
   return (
