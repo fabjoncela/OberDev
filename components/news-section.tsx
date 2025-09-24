@@ -3,66 +3,22 @@
 import type React from "react";
 
 import { useState, useRef, useEffect } from "react";
+import { translations, Language } from "../lib/i18n";
 
-export function NewsSection() {
+interface NewsSectionProps {
+  lang: Language;
+}
+
+export function NewsSection({ lang }: NewsSectionProps) {
+  const t = translations[lang].newsSection;
+  const articles = t.articles;
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const carouselRef = useRef<HTMLDivElement>(null);
   const startX = useRef(0);
   const scrollLeft = useRef(0);
   const isDragging = useRef(false);
-
-  const articles = [
-    {
-      category: "News",
-      title: "Ober Construction: Modern Living in Albania",
-      description:
-        "Our people are dedicated to finding solutions to every challenge. That spirit makes for some great stories.",
-      image: "/aaaa.png",
-    },
-    {
-      category: "Report",
-      title:
-        "Investing in Real Estate in Albania: Why Oberon Residence is the Best Choice",
-      description:
-        "How we maintain the highest safety standards across all our construction projects and worksites.",
-      image: "/invReal.jpg",
-    },
-    {
-      category: "Insight",
-      title: "Luxury living in Albania: the rise of high-standard residences",
-      description:
-        "How we maintain the highest safety standards across all our construction projects and worksites.",
-      image: "/luxury.jpg",
-    },
-    {
-      category: "Update",
-      title:
-        "The Growth of the Construction Sector in Albania: Trends and Opportunities",
-      description:
-        "How we maintain the highest safety standards across all our construction projects and worksites.",
-      image: "/growth.png",
-    },
-    {
-      category: "Update",
-      title:
-        "Sustainable Construction in Albania: Challenges and Future Prospects",
-      description: "",
-      image: "/sust.jpg",
-    },
-    {
-      category: "Update",
-      title: "5 Essential Facts About Quality Construction in Albania",
-      description: "",
-      image: "/5essent.png",
-    },
-    {
-      category: "Update",
-      title: "Oberon Residence: Perfect Details for Unmatched Quality",
-      description: "",
-      image: "/OberonTower.png",
-    },
-  ];
 
   const getItemsPerView = () => {
     if (typeof window === "undefined") return 2;
@@ -140,14 +96,11 @@ export function NewsSection() {
         <div className=" grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <span className="text-sm  text-black-400">News</span>
+              <span className="text-sm  text-black-400">{t.sectionLabel}</span>
               <div className="w-12 h-0.5 bg-accent ml-4"></div>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold">Insights</h2>
-            <p className="text-gray-400 mt-4 leading-relaxed">
-              Our people are dedicated to finding solutions to every challenge.
-              That spirit makes for some great stories.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold">{t.title}</h2>
+            <p className="text-gray-400 mt-4 leading-relaxed">{t.subtitle}</p>
           </div>
 
           <div className="lg:col-span-2">

@@ -89,6 +89,64 @@ export const translations = {
         image: "/testLogo.png",
       },
     ],
+    newsSection: {
+      sectionLabel: "News",
+      title: "Insights",
+      subtitle:
+        "Our people are dedicated to finding solutions to every challenge. That spirit makes for some great stories.",
+      articles: [
+        {
+          category: "News",
+          title: "Ober Construction: Modern Living in Albania",
+          description:
+            "Our people are dedicated to finding solutions to every challenge. That spirit makes for some great stories.",
+          image: "/aaaa.png",
+        },
+        {
+          category: "Report",
+          title:
+            "Investing in Real Estate in Albania: Why Oberon Residence is the Best Choice",
+          description:
+            "How we maintain the highest safety standards across all our construction projects and worksites.",
+          image: "/invReal.jpg",
+        },
+        {
+          category: "Insight",
+          title:
+            "Luxury living in Albania: the rise of high-standard residences",
+          description:
+            "How we maintain the highest safety standards across all our construction projects and worksites.",
+          image: "/luxury.jpg",
+        },
+        {
+          category: "Update",
+          title:
+            "The Growth of the Construction Sector in Albania: Trends and Opportunities",
+          description:
+            "How we maintain the highest safety standards across all our construction projects and worksites.",
+          image: "/growth.png",
+        },
+        {
+          category: "Update",
+          title:
+            "Sustainable Construction in Albania: Challenges and Future Prospects",
+          description: "",
+          image: "/sust.jpg",
+        },
+        {
+          category: "Update",
+          title: "5 Essential Facts About Quality Construction in Albania",
+          description: "",
+          image: "/5essent.png",
+        },
+        {
+          category: "Update",
+          title: "Oberon Residence: Perfect Details for Unmatched Quality",
+          description: "",
+          image: "/OberonTower.png",
+        },
+      ],
+    },
   },
   al: {
     heroSection: {
@@ -178,6 +236,65 @@ export const translations = {
         image: "/testLogo.png",
       },
     ],
+    newsSection: {
+      sectionLabel: "Lajme",
+      title: "Vështrime",
+      subtitle:
+        "Njerëzit tanë janë të përkushtuar për të gjetur zgjidhje për çdo sfidë. Ky shpirt sjell histori të shkëlqyera.",
+      articles: [
+        {
+          category: "Lajme",
+          title: "Ober Construction: Jeta Moderne në Shqipëri",
+          description:
+            "Njerëzit tanë janë të përkushtuar për të gjetur zgjidhje për çdo sfidë. Ky shpirt sjell histori të shkëlqyera.",
+          image: "/aaaa.png",
+        },
+        {
+          category: "Raport",
+          title:
+            "Investimi në Pasuri të Paluajtshme në Shqipëri: Pse Oberon Residence është Zgjedhja më e Mirë",
+          description:
+            "Si i ruajmë standardet më të larta të sigurisë në të gjitha projektet dhe kantieret tona të ndërtimit.",
+          image: "/invReal.jpg",
+        },
+        {
+          category: "Vështrim",
+          title:
+            "Jeta luksoze në Shqipëri: rritja e rezidencave me standard të lartë",
+          description:
+            "Si i ruajmë standardet më të larta të sigurisë në të gjitha projektet dhe kantieret tona të ndërtimit.",
+          image: "/luxury.jpg",
+        },
+        {
+          category: "Përditësim",
+          title:
+            "Rritja e Sektorit të Ndërtimit në Shqipëri: Trendet dhe Mundësitë",
+          description:
+            "Si i ruajmë standardet më të larta të sigurisë në të gjitha projektet dhe kantieret tona të ndërtimit.",
+          image: "/growth.png",
+        },
+        {
+          category: "Përditësim",
+          title:
+            "Ndërtimi i Qëndrueshëm në Shqipëri: Sfidat dhe Perspektivat e Ardhshme",
+          description: "",
+          image: "/sust.jpg",
+        },
+        {
+          category: "Përditësim",
+          title: "5 Fakte Thelbësore Rreth Ndërtimit me Cilësi në Shqipëri",
+          description: "",
+          image: "/5essent.png",
+        },
+        {
+          category: "Përditësim",
+          title:
+            "Oberon Residence: Detaje të Përsosura për Cilësi të Pakrahasueshme",
+          description: "",
+          image: "/OberonTower.png",
+        },
+      ],
+    },
   },
   it: {
     heroSection: {
@@ -268,5 +385,65 @@ export const translations = {
         image: "/testLogo.png",
       },
     ],
+    newsSection: {
+      sectionLabel: "Notizie",
+      title: "Approfondimenti",
+      subtitle:
+        "Le nostre persone sono dedicate a trovare soluzioni a ogni sfida. Questo spirito dà vita a grandi storie.",
+      articles: [
+        {
+          category: "Notizie",
+          title: "Ober Construction: Vita Moderna in Albania",
+          description:
+            "Le nostre persone sono dedicate a trovare soluzioni a ogni sfida. Questo spirito dà vita a grandi storie.",
+          image: "/aaaa.png",
+        },
+        {
+          category: "Rapporto",
+          title:
+            "Investire nel Real Estate in Albania: Perché Oberon Residence è la Scelta Migliore",
+          description:
+            "Come manteniamo i più alti standard di sicurezza in tutti i nostri progetti e cantieri.",
+          image: "/invReal.jpg",
+        },
+        {
+          category: "Approfondimento",
+          title:
+            "Vivere nel lusso in Albania: l'ascesa delle residenze di alto livello",
+          description:
+            "Come manteniamo i più alti standard di sicurezza in tutti i nostri progetti e cantieri.",
+          image: "/luxury.jpg",
+        },
+        {
+          category: "Aggiornamento",
+          title:
+            "La Crescita del Settore delle Costruzioni in Albania: Tendenze e Opportunità",
+          description:
+            "Come manteniamo i più alti standard di sicurezza in tutti i nostri progetti e cantieri.",
+          image: "/growth.png",
+        },
+        {
+          category: "Aggiornamento",
+          title:
+            "Costruzioni Sostenibili in Albania: Sfide e Prospettive Future",
+          description: "",
+          image: "/sust.jpg",
+        },
+        {
+          category: "Aggiornamento",
+          title:
+            "5 Fatti Essenziali sulla Qualità delle Costruzioni in Albania",
+          description: "",
+          image: "/5essent.png",
+        },
+        {
+          category: "Aggiornamento",
+          title:
+            "Oberon Residence: Dettagli Perfetti per una Qualità Incomparabile",
+          description: "",
+          image: "/OberonTower.png",
+        },
+      ],
+    },
   },
 };

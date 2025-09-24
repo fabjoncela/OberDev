@@ -25,7 +25,7 @@ export default function LangHomePage({ params }: Props) {
         <SectorsSection lang={params.lang} />
         <ServicesSection lang={params.lang} />
         <StatsSection lang={params.lang} />
-        <NewsSection />
+        <NewsSection lang={params.lang} />
         <CTASection />
       </main>
 
