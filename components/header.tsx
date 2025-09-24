@@ -68,12 +68,12 @@ export function Header() {
             >
               PROJECTS
             </Link>
-            <a
-              href="#news"
+            <Link
+              href="/news"
               className="text-sm font-medium hover:text-gray-500 transition-colors"
             >
               NEWS
-            </a>
+            </Link>
           </nav>
 
           <div className="flex items-center space-x-4">
@@ -259,14 +259,20 @@ export function Header() {
                     <path d="M7 10l5 5 5-5z" />
                   </svg>
                 </Link>
-
-                <a
-                  href="#news"
+                <Link
+                  href="/news"
                   className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
                   onClick={toggleMobileMenu}
                 >
                   <span>NEWS</span>
-                </a>
+                  <svg
+                    className="h-4 w-4 text-foreground"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M7 10l5 5 5-5z" />
+                  </svg>
+                </Link>
               </div>
             </nav>
           </div>
