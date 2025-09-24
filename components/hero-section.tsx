@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { translations, Language } from "../lib/i18n";
 
 const words = ["Succeed.", "Innovate."];
 
@@ -78,7 +79,12 @@ function AnimatedWord() {
   );
 }
 
-export function HeroSection() {
+interface HeroSectionProps {
+  lang: Language;
+}
+
+export function HeroSection({ lang }: HeroSectionProps) {
+  const t = translations[lang].heroSection;
   return (
     <section
       id="home"
@@ -105,12 +111,12 @@ export function HeroSection() {
                 <br />
                 <AnimatedWord />
               </h1>
-                <Button
+              <Button
                 size="lg"
                 className="bg-white text-primary hover:bg-gray-100 font-medium px-8 rounded-none cursor-pointer"
-                >
+              >
                 OUR SERVICES
-                </Button>
+              </Button>
             </div>
           </div>
           {/* Removed the card from the grid */}
@@ -119,9 +125,9 @@ export function HeroSection() {
       {/* Card fixed at bottom-right above the video */}
       <div className="absolute bottom-0 right-0 bg-white px-10 py-6 rounded-none shadow-2xl max-w-2xl w-full z-20">
         <h3 className="text-2xl  mb-3 text-primary flex flex-col">
-          <span className="flex items-center gap-3">Buy your dream home </span>
+          <span className="flex items-center gap-3">{t.headlineLine1} </span>
           <span className="flex items-center gap-3">
-            in Albania.
+            {t.headlineLine2}
             <div className="w-16 h-0.5 bg-orange-500 ml-3"></div>
           </span>
         </h3>
@@ -130,7 +136,7 @@ export function HeroSection() {
           Contact us
         </Button> */}
         <button className="pt-6 text-base relative group transition-colors duration-200 hover:text-orange-500">
-          Contact us
+          {t.contactButton}
           <span
             className="absolute left-0 -bottom-0.5 h-0.5 bg-orange-500 w-0 group-hover:w-full transition-all duration-500"
             style={{ transitionProperty: "width" }}

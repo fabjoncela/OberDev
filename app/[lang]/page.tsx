@@ -7,6 +7,7 @@ import { StatsSection } from "@/components/stats-section";
 import { NewsSection } from "@/components/news-section";
 import { CTASection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
+import { WhoWeAreSection } from "@/components/who-we-are-section";
 import type { Language } from "@/lib/i18n";
 
 interface Props {
@@ -18,7 +19,8 @@ export default function LangHomePage({ params }: Props) {
     <div className="min-h-screen">
       <Header />
       <main>
-        <HeroSection />
+        <HeroSection lang={params.lang} />
+        <WhoWeAreSection lang={params.lang} />
         <ProjectsSection />
         <SectorsSection />
         <ServicesSection />
@@ -26,6 +28,7 @@ export default function LangHomePage({ params }: Props) {
         <NewsSection />
         <CTASection />
       </main>
+
       <Footer />
     </div>
   );

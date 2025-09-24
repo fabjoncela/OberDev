@@ -2,8 +2,24 @@ export type Language = "en" | "al" | "it";
 
 export const translations = {
   en: {
+    heroSection: {
+      headlineLine1: "Buy your dream home",
+      headlineLine2: "in Albania.",
+      contactButton: "Contact us",
+    },
+    whoWeAreSection: {
+      whoWeAreTitle: "Who We Are",
+      whoWeAreText:
+        "As a national leader in our industry, Konstruktion is revolutionizing what you expect from a contractor.",
+      missionTitle: "Our Mission",
+      missionText:
+        "To integrate the entire building lifecycle into a seamless platform to redefine how the world builds.",
+      coreValuesTitle: "Core Values",
+      coreValuesText: "Passion. Integrity. Hard work. Professionalism. Caring.",
+    },
     projectsSection: {
-      title: "Delivering our clients more project clarity, greater insight, and less chaos.",
+      title:
+        "Delivering our clients more project clarity, greater insight, and less chaos.",
       subtitle: "Projects",
     },
     projects: [
@@ -34,8 +50,25 @@ export const translations = {
     ],
   },
   al: {
+    heroSection: {
+      headlineLine1: "Bli shtëpinë e ëndrrave",
+      headlineLine2: "në Shqipëri.",
+      contactButton: "Na kontaktoni",
+    },
+    whoWeAreSection: {
+      whoWeAreTitle: "Kush Jemi Ne",
+      whoWeAreText:
+        "Si një lider kombëtar në industrinë tonë, Konstruktion po revolucionarizon atë që prisni nga një kontraktor.",
+      missionTitle: "Misioni Ynë",
+      missionText:
+        "Të integrojmë të gjithë ciklin e ndërtimit në një platformë të vetme për të rishkruar mënyrën se si ndërton bota.",
+      coreValuesTitle: "Vlerat Themelore",
+      coreValuesText:
+        "Pasion. Integritet. Punë e palodhur. Profesionalizëm. Kujdes.",
+    },
     projectsSection: {
-      title: "Duke i ofruar klientëve tanë më shumë qartësi projekti, njohuri më të mëdha dhe më pak kaos.",
+      title:
+        "Duke i ofruar klientëve tanë më shumë qartësi projekti, njohuri më të mëdha dhe më pak kaos.",
       subtitle: "Projektet",
     },
     projects: [
@@ -66,8 +99,25 @@ export const translations = {
     ],
   },
   it: {
+    heroSection: {
+      headlineLine1: "Acquista la casa dei tuoi sogni",
+      headlineLine2: "in Albania.",
+      contactButton: "Contattaci",
+    },
+    whoWeAreSection: {
+      whoWeAreTitle: "Chi Siamo",
+      whoWeAreText:
+        "Come leader nazionale nel nostro settore, Konstruktion sta rivoluzionando ciò che ti aspetti da un appaltatore.",
+      missionTitle: "La Nostra Missione",
+      missionText:
+        "Integrare l'intero ciclo di vita dell'edificio in una piattaforma unica per ridefinire il modo in cui il mondo costruisce.",
+      coreValuesTitle: "Valori Fondamentali",
+      coreValuesText:
+        "Passione. Integrità. Lavoro duro. Professionalità. Cura.",
+    },
     projectsSection: {
-      title: "Offrendo ai nostri clienti maggiore chiarezza sui progetti, più approfondimenti e meno caos.",
+      title:
+        "Offrendo ai nostri clienti maggiore chiarezza sui progetti, più approfondimenti e meno caos.",
       subtitle: "Progetti",
     },
     projects: [
@@ -80,7 +130,8 @@ export const translations = {
       {
         slug: "the-one-by-ober",
         title: "THE ONE BY OBER",
-        description: "Un'esperienza di vita moderna con servizi di alto livello.",
+        description:
+          "Un'esperienza di vita moderna con servizi di alto livello.",
         image: "/theone.jpg",
       },
       {
