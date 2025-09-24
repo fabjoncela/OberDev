@@ -1,6 +1,7 @@
 "use client";
 
 import type React from "react";
+import Link from "next/link";
 
 import { useState, useRef, useEffect } from "react";
 import { translations, Language } from "../lib/i18n";
@@ -221,9 +222,10 @@ export function NewsSection({ lang }: NewsSectionProps) {
                   }}
                 >
                   {articles.map((article, index) => (
-                    <article
+                    <Link
                       key={index}
-                      className="cursor-pointer flex-shrink-0"
+                      href={`/${lang}/news/${index}`}
+                      className="cursor-pointer flex-shrink-0 block"
                       style={{ width: `${100 / itemsPerView}%` }}
                     >
                       <div className="group aspect-[4/3] bg-gray-200 rounded-lg mb-4 overflow-hidden">
@@ -242,7 +244,7 @@ export function NewsSection({ lang }: NewsSectionProps) {
                           {article.title}
                         </h3>
                       </div>
-                    </article>
+                    </Link>
                   ))}
                 </div>
               </div>
