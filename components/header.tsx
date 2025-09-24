@@ -56,13 +56,13 @@ export function Header() {
               HOME
             </Link>
             <a
-              href="#about"
+              href="#"
               className="text-sm font-medium hover:text-gray-500 transition-colors"
             >
               ABOUT US
             </a>
             <a
-              href="#services"
+              href="#"
               className="text-sm font-medium hover:text-gray-500 transition-colors"
             >
               SERVICES
@@ -136,6 +136,7 @@ export function Header() {
         </div>
       </header>
 
+      {/* mobile navigation menu */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-50 bg-background md:hidden">
           <div className="flex h-full flex-col">
@@ -207,7 +208,7 @@ export function Header() {
                 </Link>
 
                 <a
-                  href="#about"
+                  href="#"
                   className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
                   onClick={toggleMobileMenu}
                 >
@@ -222,7 +223,7 @@ export function Header() {
                 </a>
 
                 <a
-                  href="#services"
+                  href="#"
                   className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
                   onClick={toggleMobileMenu}
                 >
@@ -236,7 +237,7 @@ export function Header() {
                   </svg>
                 </a>
 
-                <a
+                {/* <a
                   href="#work"
                   className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
                   onClick={toggleMobileMenu}
@@ -249,7 +250,7 @@ export function Header() {
                   >
                     <path d="M7 10l5 5 5-5z" />
                   </svg>
-                </a>
+                </a> */}
                 <Link
                   href="/projects"
                   className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
@@ -278,6 +279,20 @@ export function Header() {
                     <path d="M7 10l5 5 5-5z" />
                   </svg>
                 </Link>
+                <a
+                  href="#"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
+                  onClick={toggleMobileMenu}
+                >
+                  <span>CONTACT US</span>
+                  <svg
+                    className="h-4 w-4 text-foreground"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M7 10l5 5 5-5z" />
+                  </svg>
+                </a>
               </div>
             </nav>
           </div>
