@@ -48,9 +48,12 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#news" className="hover:text-accent transition-colors">
+                <Link
+                  href="/news"
+                  className="hover:text-accent transition-colors"
+                >
                   News &amp; Media
-                </a>
+                </Link>
               </li>
               <li>
                 {/* Use Next.js Link for projects */}
