@@ -46,31 +46,31 @@ export function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href={`/${language}/`}
-              className="text-sm font-medium hover:text-accent transition-colors"
+              className="text-sm font-medium hover:text-gray-500 transition-colors"
             >
               HOME
             </Link>
             <a
               href="#about"
-              className="text-sm font-medium hover:text-accent transition-colors"
+              className="text-sm font-medium hover:text-gray-500 transition-colors"
             >
               ABOUT US
             </a>
             <a
               href="#services"
-              className="text-sm font-medium hover:text-accent transition-colors"
+              className="text-sm font-medium hover:text-gray-500 transition-colors"
             >
               SERVICES
             </a>
             <Link
               href="/projects"
-              className="text-sm font-medium hover:text-accent transition-colors"
+              className="text-sm font-medium hover:text-gray-500 transition-colors"
             >
               PROJECTS
             </Link>
             <a
               href="#news"
-              className="text-sm font-medium hover:text-accent transition-colors"
+              className="text-sm font-medium hover:text-gray-500 transition-colors"
             >
               NEWS
             </a>
@@ -102,8 +102,8 @@ export function Header() {
               aria-label="Select language"
               style={{ minWidth: 70 }}
             >
-              <option value="en">Eng</option>
-              <option value="al">Alb</option>
+              <option value="en">En</option>
+              <option value="al">Al</option>
               <option value="it">It</option>
             </select>
 
@@ -188,7 +188,7 @@ export function Header() {
               <div className="space-y-8">
                 <Link
                   href={`/${language}/`}
-                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
                   onClick={toggleMobileMenu}
                 >
                   <span>HOME</span>
@@ -203,7 +203,7 @@ export function Header() {
 
                 <a
                   href="#about"
-                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
                   onClick={toggleMobileMenu}
                 >
                   <span>ABOUT US</span>
@@ -218,7 +218,7 @@ export function Header() {
 
                 <a
                   href="#services"
-                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
                   onClick={toggleMobileMenu}
                 >
                   <span>SERVICES</span>
@@ -233,7 +233,7 @@ export function Header() {
 
                 <a
                   href="#work"
-                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
                   onClick={toggleMobileMenu}
                 >
                   <span>WORK</span>
@@ -247,7 +247,7 @@ export function Header() {
                 </a>
                 <Link
                   href="/projects"
-                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
                   onClick={toggleMobileMenu}
                 >
                   <span>PROJECTS</span>
@@ -262,7 +262,7 @@ export function Header() {
 
                 <a
                   href="#news"
-                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
+                  className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-gray-500 transition-colors rounded"
                   onClick={toggleMobileMenu}
                 >
                   <span>NEWS</span>
