@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import { LanguageProvider } from "@/components/language-provider";
 
 export const metadata: Metadata = {
   title: "Ober",
@@ -21,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
         <Analytics />
       </body>
     </html>

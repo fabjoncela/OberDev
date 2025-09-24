@@ -1,10 +1,10 @@
 "use client";
 
-import { projects } from "@/lib/projects";
+import { translations } from "@/lib/i18n";
 import Link from "next/link";
-
 import { Button } from "@/components/ui/button";
 import { useState, useRef, useEffect } from "react";
+import { useLanguage } from "@/components/language-provider";
 
 export function ProjectsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,8 +13,6 @@ export function ProjectsSection() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const startX = useRef(0);
   const isDragging = useRef(false);
-
-  // projects imported from lib/projects
 
   const getItemsPerView = () => {
     if (typeof window === "undefined") return 1;
@@ -35,6 +33,9 @@ export function ProjectsSection() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const { language } = useLanguage();
+  const projects = translations[language].projects;
+  const t = translations[language].projectsSection;
   const maxIndex = Math.max(0, projects.length - itemsPerView);
 
   const nextSlide = () => {
@@ -78,17 +79,20 @@ export function ProjectsSection() {
     }
   };
 
+  // Removed duplicate declarations
+
   return (
     <section id="work" className="py-16 md:py-24 bg-background">
       <div className="container px-4 md:px-6">
         <div className="mb-12">
           <div className="flex items-center mb-4">
-            <span className="text-sm font-medium text-red-700">Projects</span>
+            <span className="text-sm font-medium text-red-700">
+              {t.subtitle}
+            </span>
             <div className="w-12 h-0.5 bg-accent ml-4"></div>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold leading-tight max-w-4xl">
-            Delivering our clients more project clarity, greater insight, and
-            less chaos.
+            {t.title}
           </h2>
           {/* <Button variant="link" className="mt-4 p-0 text-accent hover:text-accent/80">
             View all projects →
@@ -221,7 +225,7 @@ export function ProjectsSection() {
                   style={{ width: `${100 / itemsPerView}%` }}
                 >
                   <Link
-                    href={`/projects/${project.slug}`}
+                    href={`/${language}/projects/${project.slug}`}
                     className="group relative overflow-hidden bg-card block focus:outline-none"
                   >
                     <div className="aspect-[4/3] bg-gray-200 relative overflow-hidden">
@@ -266,9 +270,7 @@ export function ProjectsSection() {
                       </div>
                     </div>
                     <div className="p-4">
-                      <p className="text-xs text-gray-500 mb-1">
-                        {project.category}
-                      </p>
+                      <p className="text-xs text-gray-500 mb-1">{t.subtitle}</p>
                       <h3 className="font-semibold text-lg">{project.title}</h3>
                     </div>
                   </Link>

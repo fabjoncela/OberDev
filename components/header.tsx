@@ -3,19 +3,38 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useLanguage } from "@/components/language-provider";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, setLanguage } = useLanguage();
+  const router = useRouter();
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((open) => !open);
+  };
+
+  // Handle language change for both desktop and mobile
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const lang = e.target.value as any;
+    setLanguage(lang);
+    router.push(`/${lang}/`);
+  };
+  const handleMobileLanguageChange = (
+    e: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const lang = e.target.value as any;
+    setLanguage(lang);
+    setIsMobileMenuOpen(false);
+    router.push(`/${lang}/`);
   };
 
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href={`/${language}/`} className="flex items-center space-x-2">
             <img
               src="/MainLogo2.png"
               alt="Konstruktion Logo"
@@ -26,7 +45,7 @@ export function Header() {
 
           <nav className="hidden md:flex items-center space-x-8">
             <Link
-              href="/"
+              href={`/${language}/`}
               className="text-sm font-medium hover:text-accent transition-colors"
             >
               HOME
@@ -69,11 +88,24 @@ export function Header() {
               </svg>
             </Button> */}
             <div
-              className="hidden md:flex bg-transparent  text-black btext-sm font-medium px-0 cursor-pointer select-none "
+              className="hidden md:flex bg-transparent text-black text-sm font-medium px-0 cursor-pointer select-none"
               style={{ borderRadius: 0 }}
             >
               GET IN TOUCH
             </div>
+
+            {/* Language Dropdown */}
+            <select
+              className="hidden md:block border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-white text-black"
+              value={language}
+              onChange={handleLanguageChange}
+              aria-label="Select language"
+              style={{ minWidth: 70 }}
+            >
+              <option value="en">Eng</option>
+              <option value="al">Alb</option>
+              <option value="it">It</option>
+            </select>
 
             <Button
               variant="ghost"
@@ -137,11 +169,25 @@ export function Header() {
               </Button>
             </div>
 
+            {/* Language Dropdown for Mobile */}
+            <div className="px-4 pt-4 pb-2 flex justify-end">
+              <select
+                className="block w-32 border border-gray-300 rounded px-2 py-1 text-base focus:outline-none focus:ring-2 focus:ring-accent bg-white text-black"
+                value={language}
+                aria-label="Select language"
+                onChange={handleMobileLanguageChange}
+              >
+                <option value="en">Eng</option>
+                <option value="al">Alb</option>
+                <option value="it">It</option>
+              </select>
+            </div>
+
             {/* Mobile menu navigation */}
             <nav className="flex-1 px-4 py-8">
               <div className="space-y-8">
                 <Link
-                  href="/"
+                  href={`/${language}/`}
                   className="flex items-center justify-between px-0 py-2 text-2xl font-bold text-foreground hover:text-accent transition-colors rounded"
                   onClick={toggleMobileMenu}
                 >
@@ -154,7 +200,6 @@ export function Header() {
                     <path d="M7 10l5 5 5-5z" />
                   </svg>
                 </Link>
-                
 
                 <a
                   href="#about"

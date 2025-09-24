@@ -1,9 +1,13 @@
+"use client";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { projects } from "@/lib/projects";
+import { translations } from "@/lib/i18n";
+import { useLanguage } from "@/components/language-provider";
 import Link from "next/link";
 
 export default function ProjectsListPage() {
+  const { language } = useLanguage();
+  const projects = translations[language].projects;
   return (
     <>
       <Header />
@@ -13,16 +17,14 @@ export default function ProjectsListPage() {
           {projects.map((project) => (
             <Link
               key={project.slug}
-              href={`/projects/${project.slug}`}
+              href={`/${language}/projects/${project.slug}`}
               className="group relative overflow-hidden bg-card block focus:outline-none"
             >
               <div className="aspect-[4/3] bg-gray-200 relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className={`absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105${
-                    project.slug === "urban-plaza" ? " blur-xs" : ""
-                  }`}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -57,7 +59,6 @@ export default function ProjectsListPage() {
               </div>
               <div className="p-4">
                 <h2 className="font-semibold text-lg">{project.title}</h2>
-                <p className="text-xs text-gray-500 mb-1">{project.category}</p>
                 <p className="text-gray-600">{project.description}</p>
               </div>
             </Link>
