@@ -87,14 +87,17 @@ export function ProjectsSection() {
       className="py-16 md:py-24 bg-background flex justify-center"
     >
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="mb-12">
+        <div className="pl-8 mb-12">
           <div className="flex items-center mb-4">
             <span className="text-sm font-medium text-black-700">
               {t.subtitle}
             </span>
-            <div className="w-12 h-0.5 bg-accent ml-4"></div>
+            <div
+              className="w-15 h-0.5 bg-orange-500 ml-4"
+              style={{ height: "1px" }}
+            ></div>
           </div>
-          <h2 className="text-3xl md:text-5xl  leading-tight max-w-4xl">
+          <h2 className="pl-1 text-3xl md:text-5xl  leading-tight max-w-4xl">
             {t.title}
           </h2>
           {/* <Button variant="link" className="mt-4 p-0 text-black-700 hover:text-accent/80">

@@ -10,16 +10,17 @@ export const translations = {
     whoWeAreSection: {
       whoWeAreTitle: "Who We Are",
       whoWeAreText:
-        "As a national leader in our industry, Konstruktion is revolutionizing what you expect from a contractor.",
+        "As a distinguished national leader in our field, Ober is redefining the very standards of modern construction—transforming expectations into enduring excellence.",
       missionTitle: "Our Mission",
       missionText:
-        "To integrate the entire building lifecycle into a seamless platform to redefine how the world builds.",
+        "To seamlessly integrate every phase of the building lifecycle into a unified platform, reshaping the way the world envisions and constructs the built environment.",
       coreValuesTitle: "Core Values",
-      coreValuesText: "Passion. Integrity. Hard work. Professionalism. Caring.",
+      coreValuesText:
+        "Unwavering Passion. Uncompromising Integrity. Tireless Diligence. Refined Professionalism. Genuine Care.",
     },
     projectsSection: {
       title:
-        "Delivering our clients more project clarity, greater insight, and less chaos.",
+        "A testament to innovation, craftsmanship, and vision—our projects stand as enduring landmarks of precision and purpose.",
       subtitle: "Projects",
     },
     projects: [
@@ -58,7 +59,7 @@ export const translations = {
     whoWeAreSection: {
       whoWeAreTitle: "Kush Jemi Ne",
       whoWeAreText:
-        "Si një lider kombëtar në industrinë tonë, Konstruktion po revolucionarizon atë që prisni nga një kontraktor.",
+        "Si një lider kombëtar në industrinë tonë, Ober po revolucionarizon atë që prisni nga një kontraktor.",
       missionTitle: "Misioni Ynë",
       missionText:
         "Të integrojmë të gjithë ciklin e ndërtimit në një platformë të vetme për të rishkruar mënyrën se si ndërton bota.",
@@ -68,7 +69,7 @@ export const translations = {
     },
     projectsSection: {
       title:
-        "Duke i ofruar klientëve tanë më shumë qartësi projekti, njohuri më të mëdha dhe më pak kaos.",
+        "Një testament për inovacionin, mjeshtërinë dhe vizionin—projektet tona qëndrojnë si monumente të qëndrueshme të saktësisë dhe qëllimit.",
       subtitle: "Projektet",
     },
     projects: [
@@ -107,7 +108,7 @@ export const translations = {
     whoWeAreSection: {
       whoWeAreTitle: "Chi Siamo",
       whoWeAreText:
-        "Come leader nazionale nel nostro settore, Konstruktion sta rivoluzionando ciò che ti aspetti da un appaltatore.",
+        "In qualità di leader nazionale distinto nel nostro campo, Ober sta ridefinendo gli standard stessi della costruzione moderna, trasformando le aspettative in eccellenza duratura.",
       missionTitle: "La Nostra Missione",
       missionText:
         "Integrare l'intero ciclo di vita dell'edificio in una piattaforma unica per ridefinire il modo in cui il mondo costruisce.",
@@ -117,7 +118,7 @@ export const translations = {
     },
     projectsSection: {
       title:
-        "Offrendo ai nostri clienti maggiore chiarezza sui progetti, più approfondimenti e meno caos.",
+        "Un testament per l'innovazione, l'artigianato e la visione: i nostri progetti si ergono come monumenti duraturi di precisione e scopo.",
       subtitle: "Progetti",
     },
     projects: [

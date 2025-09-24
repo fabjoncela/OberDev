@@ -11,7 +11,7 @@ export function Footer() {
           {/* About Ober */}
           <div className="text-center w-full">
             <h3 className="font-semibold mb-4">About Ober</h3>
-            <p className="text-sm text-muted-foreground max-w-xs">
+            <p className="text-sm text-muted-foreground max-w-xs mx-auto">
               Ober Construction is a top developer of A-grade commercial,
               industrial, and residential projects in Albania, with a proven
               track record of doubling its turnover since its foundation.
