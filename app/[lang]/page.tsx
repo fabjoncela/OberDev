@@ -22,9 +22,9 @@ export default function LangHomePage({ params }: Props) {
         <HeroSection lang={params.lang} />
         <WhoWeAreSection lang={params.lang} />
         <ProjectsSection />
-        <SectorsSection />
-        <ServicesSection lang={params.lang}/>
-        <StatsSection />
+        <SectorsSection lang={params.lang} />
+        <ServicesSection lang={params.lang} />
+        <StatsSection lang={params.lang} />
         <NewsSection />
         <CTASection />
       </main>

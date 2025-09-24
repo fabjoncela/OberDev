@@ -3,8 +3,8 @@ export type Language = "en" | "al" | "it";
 export const translations = {
   en: {
     heroSection: {
-      headlineLine1: "Buy your dream home",
-      headlineLine2: "in Albania.",
+      headlineLine1: "Invest in your future. Find your ",
+      headlineLine2: "dream property in Albania today.",
       contactButton: "Contact us",
     },
     whoWeAreSection: {
@@ -17,6 +17,42 @@ export const translations = {
       coreValuesTitle: "Core Values",
       coreValuesText:
         "Unwavering Passion. Uncompromising Integrity. Tireless Diligence. Refined Professionalism. Genuine Care.",
+    },
+    sectorsSection: {
+      title: "Our sectors",
+      sectors: [
+        {
+          title: "Buildings",
+          description:
+            "We offers substantial construction experience, competitive pricing, financial strength, integrity and a commitment to your project that is supported by a foundation of quality and workplace safety.",
+          tags: ["Residential", "Houses", "Business"],
+        },
+        {
+          title: "Civil Infrastructure",
+          description:
+            "The geographical diversity, project complexity and public nature of civil work results in an exceptionally challenging industry that demands a high level of technical construction expertise.",
+          tags: ["Hospitality", "Public Buildings", "Museum", "Hospitals"],
+        },
+        {
+          title: "Heavy Industrial",
+          description:
+            "Konstruktion's industrial construction companies respond to the unique needs of clients in the petrochemical, oil and gas, pulp and paper, mining, and power and renewable industries.",
+          tags: ["Factory", "Refinery"],
+        },
+      ],
+    },
+    statsSection: {
+      title1: "Building for",
+      title2: "the best.",
+      description:
+        "At Ober, we pursue bold new frontiers in construction. By uniting visionary talent, pioneering innovations, and strategic partnerships, we anticipate challenges before they arise—and transform them into opportunities to build smarter, stronger, and better.",
+      innovation: "Innovation",
+      foundation: "A strong foundation",
+      stats: [
+        { number: "100%", label: "Employee Owned" },
+        { number: "50", label: "Project in various industries" },
+        { number: "20", label: "With nearly 20 years in business" },
+      ],
     },
     servicesSection: {
       title:
@@ -56,8 +92,8 @@ export const translations = {
   },
   al: {
     heroSection: {
-      headlineLine1: "Bli shtëpinë e ëndrrave",
-      headlineLine2: "në Shqipëri.",
+      headlineLine1: "Investoni në të ardhmen tuaj. Gjeni ",
+      headlineLine2: "pronën tuaj të ëndrrave në Shqipëri sot.",
       contactButton: "Na kontaktoni",
     },
     whoWeAreSection: {
@@ -70,6 +106,42 @@ export const translations = {
       coreValuesTitle: "Vlerat Themelore",
       coreValuesText:
         "Pasion. Integritet. Punë e palodhur. Profesionalizëm. Kujdes.",
+    },
+    sectorsSection: {
+      title: "Sektoret tona",
+      sectors: [
+        {
+          title: "Ndërtesa",
+          description:
+            "Ne ofrojmë përvojë të konsiderueshme ndërtimi, çmime konkurruese, forcë financiare, integritet dhe një angazhim ndaj projektit tuaj që mbështetet nga një themel cilësie dhe siguri në vendin e punës.",
+          tags: ["Rezidenciale", "Shtëpi", "Biznes"],
+        },
+        {
+          title: "Infrastrukturë Civile",
+          description:
+            "Diversiteti gjeografik, kompleksiteti i projekteve dhe natyra publike e punëve civile rezultojnë në një industri jashtëzakonisht sfiduese që kërkon një nivel të lartë të ekspertizës teknike të ndërtimit.",
+          tags: ["Mikpritje", "Ndërtesa Publike", "Muze", "Spitale"],
+        },
+        {
+          title: "Industria e Rëndë",
+          description:
+            "Kompanitë tona të ndërtimit industrial i përgjigjen nevojave unike të klientëve në industrinë petrokimike, të naftës dhe gazit, të letrës, minierave dhe energjisë së rinovueshme.",
+          tags: ["Fabrikë", "Rafineri"],
+        },
+      ],
+    },
+    statsSection: {
+      title1: "Ndërtojmë për",
+      title2: "më të mirët.",
+      description:
+        "Në Ober, ne ndjekim horizonte të reja të guximshme në ndërtim. Duke bashkuar talentin vizionar, inovacionet pioniere dhe partneritetet strategjike, parashikojmë sfidat përpara se të shfaqen—dhe i kthejmë ato në mundësi për të ndërtuar më zgjuar, më fort dhe më mirë.",
+      innovation: "Inovacion",
+      foundation: "Një themel i fortë",
+      stats: [
+        { number: "100%", label: "Në pronësi të punonjësve" },
+        { number: "50", label: "Projekte në industri të ndryshme" },
+        { number: "20", label: "Gati 20 vite eksperiencë" },
+      ],
     },
     servicesSection: {
       title:
@@ -109,8 +181,8 @@ export const translations = {
   },
   it: {
     heroSection: {
-      headlineLine1: "Acquista la casa dei tuoi sogni",
-      headlineLine2: "in Albania.",
+      headlineLine1: " Investi nel tuo futuro. Trova la tua",
+      headlineLine2: "proprieta dei sogni in Albania oggi.",
       contactButton: "Contattaci",
     },
     whoWeAreSection: {
@@ -123,6 +195,42 @@ export const translations = {
       coreValuesTitle: "Valori Fondamentali",
       coreValuesText:
         "Passione. Integrità. Lavoro duro. Professionalità. Cura.",
+    },
+    sectorsSection: {
+      title: "I nostri settori",
+      sectors: [
+        {
+          title: "Edifici",
+          description:
+            "Offriamo una notevole esperienza nella costruzione, prezzi competitivi, solidità finanziaria, integrità e un impegno per il vostro progetto supportato da una base di qualità e sicurezza sul lavoro.",
+          tags: ["Residenziale", "Case", "Business"],
+        },
+        {
+          title: "Infrastrutture Civili",
+          description:
+            "La diversità geografica, la complessità dei progetti e la natura pubblica dei lavori civili si traducono in un settore eccezionalmente impegnativo che richiede un alto livello di competenza tecnica nella costruzione.",
+          tags: ["Ospitalità", "Edifici Pubblici", "Museo", "Ospedali"],
+        },
+        {
+          title: "Industria Pesante",
+          description:
+            "Le aziende di costruzione industriale di Konstruktion rispondono alle esigenze uniche dei clienti nei settori petrolchimico, petrolifero e del gas, della carta, delle miniere e delle energie rinnovabili.",
+          tags: ["Fabbrica", "Raffineria"],
+        },
+      ],
+    },
+    statsSection: {
+      title1: "Costruiamo per",
+      title2: "i migliori.",
+      description:
+        "In Ober, perseguiamo nuovi audaci orizzonti nell'edilizia. Unendo talenti visionari, innovazioni pionieristiche e partnership strategiche, anticipiamo le sfide prima che si presentino—e le trasformiamo in opportunità per costruire in modo più intelligente, più forte e migliore.",
+      innovation: "Innovazione",
+      foundation: "Una base solida",
+      stats: [
+        { number: "100%", label: "Di proprietà dei dipendenti" },
+        { number: "50", label: "Progetti in vari settori" },
+        { number: "20", label: "Quasi 20 anni di attività" },
+      ],
     },
     servicesSection: {
       title:

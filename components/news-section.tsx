@@ -135,15 +135,15 @@ export function NewsSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-card">
-      <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <section className="sm:px-10  md:px-30  lg:pl-10 lg:pr-20 xl:pl-40 py-16 md:py-24 bg-card">
+      <div className=" container px-4 ">
+        <div className=" grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              {/* <span className="text-sm font-medium text-muted">News</span> */}
+              <span className="text-sm  text-black-400">News</span>
               <div className="w-12 h-0.5 bg-accent ml-4"></div>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold">Recent Articles</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Insights</h2>
             <p className="text-gray-400 mt-4 leading-relaxed">
               Our people are dedicated to finding solutions to every challenge.
               That spirit makes for some great stories.
