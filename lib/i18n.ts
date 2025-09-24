@@ -18,6 +18,10 @@ export const translations = {
       coreValuesText:
         "Unwavering Passion. Uncompromising Integrity. Tireless Diligence. Refined Professionalism. Genuine Care.",
     },
+    servicesSection: {
+      title:
+        "Delivering exceptional construction expertise and strategic insight from inception to completion—ensuring every project is guided with precision, foresight, and uncompromising quality.",
+    },
     projectsSection: {
       title:
         "A testament to innovation, craftsmanship, and vision—our projects stand as enduring landmarks of precision and purpose.",
@@ -67,6 +71,10 @@ export const translations = {
       coreValuesText:
         "Pasion. Integritet. Punë e palodhur. Profesionalizëm. Kujdes.",
     },
+    servicesSection: {
+      title:
+        "Ofrimi i ekspertizës së jashtëzakonshme të ndërtimit dhe njohurive strategjike nga fillimi në përfundim—duke siguruar që çdo projekt të udhëhiqet me saktësi, parashikim dhe cilësi të pakompromis.",
+    },
     projectsSection: {
       title:
         "Një testament për inovacionin, mjeshtërinë dhe vizionin—projektet tona qëndrojnë si monumente të qëndrueshme të saktësisë dhe qëllimit.",
@@ -115,6 +123,10 @@ export const translations = {
       coreValuesTitle: "Valori Fondamentali",
       coreValuesText:
         "Passione. Integrità. Lavoro duro. Professionalità. Cura.",
+    },
+    servicesSection: {
+      title:
+        "Fornendo eccezionale competenza nella costruzione e intuizione strategica dall'inizio al completamento—garantendo che ogni progetto sia guidato con precisione, lungimiranza e qualità senza compromessi.",
     },
     projectsSection: {
       title:

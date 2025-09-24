@@ -23,7 +23,7 @@ export default function LangHomePage({ params }: Props) {
         <WhoWeAreSection lang={params.lang} />
         <ProjectsSection />
         <SectorsSection />
-        <ServicesSection />
+        <ServicesSection lang={params.lang}/>
         <StatsSection />
         <NewsSection />
         <CTASection />
